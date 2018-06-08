@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-   private RecyclerView recyclerView;
+    private RecyclerView recyclerView;
     private List<Person> persons;
 
 
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView =(RecyclerView)findViewById(R.id.rv);
+        recyclerView = (RecyclerView) findViewById(R.id.rv);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
 
@@ -29,16 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-    // This method creates an ArrayList that has three Person objects
-// Checkout the project associated with this tutorial on Github if
-// you want to use the same images.
-
-    private void initializeData(){
+    private void initializeData() {
         persons = new ArrayList<>();
         persons.add(new Person("Emma Wilson", "23 years old", R.drawable.emma));
         persons.add(new Person("Lavery Maiss", "25 years old", R.drawable.lavery));
         persons.add(new Person("Lillie Watts", "35 years old", R.drawable.lillie));
     }
-
 }
+
+
